@@ -27,6 +27,9 @@ chapt4_interface
 install(TARGETS turtle_control_node patrol_client_node
   DESTINATION lib/${PROJECT_NAME}
 )
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
